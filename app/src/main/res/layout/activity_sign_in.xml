@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/purple_700"
+                android:textSize="17sp"
+                android:text="GET LOAN IN 3 EASY STEPS "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+          <TextView
+              android:textColor="@color/purple_200"
+              android:textSize="17sp"
+              android:text="1.Create your account "
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="2.Enter identification Details "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="3.Enter your loan amount "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signinButton"
+            android:layout_marginTop="20dp"
+            android:text=" SIGN IN "
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/btn_shape_gradient"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/newMemberTexView"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/purple_200"
+            android:textSize="17sp"
+            android:text="New member? Create Account "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_containerSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</RelativeLayout>

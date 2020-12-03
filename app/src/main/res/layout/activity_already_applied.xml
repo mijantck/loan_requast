@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlreadyApplied"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="Your loan request has been submitted Successfully. We are experiencing long queue times but we are activity working to shorten the queue time.you will get a confirmation Message vai SMS,upon approval "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/gotITButton"
+            android:layout_marginTop="20dp"
+            android:text=" GOT IT! "
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/btn_shape_gradient"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</RelativeLayout>

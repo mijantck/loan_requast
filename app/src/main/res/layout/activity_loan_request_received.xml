@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanRequestReceived"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="Loan Request Received."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="You will get a confirmation Message via SMS,upon approval. sometime We may experience long queue time but we are actively working to shorten thr queue time and serve you as soon possible."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textColor="@color/purple_200"
+                android:textSize="17sp"
+                android:text="encrypted and sucured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_700"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="BONUS! Win 100 Bob Reward "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/claimBunusButton"
+            android:layout_marginTop="20dp"
+            android:text="CLAIM BONUS "
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/btn_shape_gradient"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</LinearLayout>
